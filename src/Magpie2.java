@@ -51,6 +51,14 @@ public class Magpie2 {
 			response = "Do you have a lot of friends?";
 		} else if (statement.indexOf("Mrs.") >=0) {
 			response = "She sounds like a good teacher.";
+		} else if (statement.trim().length() <=0) {
+			response = "Hello?";
+		} else if (statement.indexOf("yes") <=0) {
+			response = "I'm glad.";
+		} else if (statement.indexOf("maybe") <=0) {
+			response = "Are you sure?";
+		} else if (statement.indexOf("why") <=0) {
+			response = "Why do you think?";
 		} else {
 			response = getRandomResponse();
 		}
